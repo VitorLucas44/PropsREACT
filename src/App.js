@@ -1,11 +1,15 @@
-import './App.css';
+import './App.sass';
+import React from 'react';
+import UserList from './Userlist/userlist';
 
-function App() {
+const App = () => {
+  let users = ['Vitor', 'Bachir', 'Victor', 'Quentin'];
   return (
-    <div className="App">
-
+    <div>
+      <h1>Liste des utilisateurs</h1>
+      <UserList users={users} />
     </div>
   );
-}
+};
 
 export default App;
